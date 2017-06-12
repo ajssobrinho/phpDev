@@ -1,0 +1,262 @@
+@charset "iso-8859-1";
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
+
+body{
+	font-family:'Raleway', Arial;
+	background-color: #ecf0f1;
+	overflow-x: hidden;
+	}
+	
+a:link {
+	color:#FFFFFF;
+	text-decoration:none;
+	-webkit-transition: all 0.5s; /* Safari and Chrome */
+    -moz-transition: all 0.5s; /* Firefox */
+    -ms-transition: all 0.5s; /* Internet Explorer */
+    -o-transition: all 0.5s; /* Opera */
+    transition: all 0.5s;
+	}      /* unvisited link */
+
+a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	}  /* visited link */
+
+a:hover {
+	color:#f9d4ca;
+	text-decoration:none;
+	}
+	
+.topbar{
+	background-color:#2C3E50;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	color:white;
+	height:45px;
+	overflow:hidden;
+	z-index:+500;
+	}
+	
+.topbar ul{
+	display:inline-table;
+	position:absolute;
+	top:-18px;
+	}
+
+.topbar ul li{
+	display:inline-table;
+	height:50px;
+	top:-10px;
+	position:relative;
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+	font-size:1.2em;
+	font-weight:500;
+	-webkit-transition: all 0.2s; /* Safari and Chrome */
+    -moz-transition: all 0.2s; /* Firefox */
+    -ms-transition: all 0.2s; /* Internet Explorer */
+    -o-transition: all 0.2s; /* Opera */
+    transition: all 0.2s;
+	}
+
+.topbar ul li:hover{
+	background-color:#343459;
+	padding-left:10px;
+	padding-right:10px;
+	cursor:default;
+	}
+	
+.sidebar{
+	width:16%;
+	height:90%;
+	position:fixed;
+	background-color:white;
+	top:8%;
+	left:1%;
+	border-radius:0.2em;
+	float:left;
+	}	
+	
+.sidebar ul{
+	position:absolute;
+	width:100%;
+	left:-40px;
+	top:20px;
+	}
+
+.sidebar ul li{
+	display:block;
+	height:40px;
+	top:-10px;
+	position:relative;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:5px;
+	font-size:1.2em;
+	font-weight:500;
+	-webkit-transition: all 0.2s; /* Safari and Chrome */
+    -moz-transition: all 0.2s; /* Firefox */
+    -ms-transition: all 0.2s; /* Internet Explorer */
+    -o-transition: all 0.2s; /* Opera */
+    transition: all 0.2s;
+	}
+
+.sidebar ul li:hover{
+	background-color:#F5F7F7;
+	padding-left:20px;
+	padding-right:10px;
+	font-weight:600;
+	cursor:pointer;
+	}		
+	
+.content{
+	width:80%;
+	height:70.4%;
+	position:absolute;
+	padding:10px;
+	background-color:white;
+	top:25%;
+	right:1%;
+	border-radius:0.2em;
+	float:right;
+	}
+	
+.topbar_content{
+	width:81.3%;
+	height:15%;
+	position:fixed;
+	z-index:+50;
+	background-color:white;
+	top:8%;
+	right:1%;
+	border-radius:0.2em;
+	float:right;
+	overflow:hidden;
+
+	}
+	
+.graph{
+	line-height:180%; 
+	width:600px; 
+	height:35%; 
+	display:inline-table;
+	border-radius:0.2em; 
+	color:#25333F; 
+	background-color:#F4F4F4;
+	padding-top:5px;
+	margin-bottom:5px;
+	}	
+	
+.dotted_line_graph{
+	display:inline-table; 
+	width:343px;
+	border: 1px dashed #D8D8D8; 
+	position:relative; 
+	top:-3px;
+	}	
+	
+.text_dotted_lines{
+	position:relative;
+	font-size:0.7em;
+	font-weight:600;
+	}
+	
+.graph_values{
+	position:relative; 
+	width:90%; 
+	top:-80%; 
+	margin-right:auto; 
+	margin-left:auto; 
+	right:0; 
+	left:0; 
+	height:100%;´
+	}	
+	
+.graph_values ul{
+	display:inline-table;
+	height:10px;
+	width:100%;
+	bottom:20px;
+	left:-23px;
+	position:absolute;
+	z-index:+50;
+	}
+
+.graph_values ul li{
+	display:inline-table;
+	height:12px;
+	margin-right:43px;
+	border-radius:20px;
+	width:12px;
+	overflow:hidden;
+	background-color:#C64A4A;
+	position:relative;
+	font-size:0em;
+	-webkit-transition: all 0.2s; /* Safari and Chrome */
+    -moz-transition: all 0.2s; /* Firefox */
+    -ms-transition: all 0.2s; /* Internet Explorer */
+    -o-transition: all 0.2s; /* Opera */
+    transition: all 0.2s;
+	}
+
+.graph_values ul li:hover{
+	background-color:#DF4949;
+	cursor:pointer;
+	font-weight:600;
+	-webkit-transform: scale(1.62);
+  	transform: scale(1.62);
+	}
+	
+.graph_lines{
+	z-index:-5;
+	height:4px;
+	background-color:#DF4949;
+	position:relative;
+	bottom:55px;}					
+	
+.topbar_content ul{
+	display:inline-table;
+	height:100%;
+	width:100%;
+	top:-16px;
+	left:0;
+	position:absolute;
+	}
+
+.topbar_content ul li{
+	display:inline-table;
+	height:110%;
+	width:150px;
+	position:relative;
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:5px;
+	font-size:0.9em;
+	font-weight:500;
+	-webkit-transition: all 0.2s; /* Safari and Chrome */
+    -moz-transition: all 0.2s; /* Firefox */
+    -ms-transition: all 0.2s; /* Internet Explorer */
+    -o-transition: all 0.2s; /* Opera */
+    transition: all 0.2s;
+	}
+
+.topbar_content ul li:hover{
+	background-color:#F5F7F7;
+	padding-left:10px;
+	padding-right:10px;
+	cursor:pointer;
+	font-weight:600;
+	}		
+	
+/* INDEX */	
+.content_index:hover{
+		cursor:pointer;
+	 -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+	}
+	
